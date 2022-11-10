@@ -11,7 +11,3 @@ def salvar(tarefa):
 
     with open('tarefas.json', 'w') as json_tarefa:
         return json.dump(tarefas, json_tarefa)
-
-
-
-app.run(debug=True)

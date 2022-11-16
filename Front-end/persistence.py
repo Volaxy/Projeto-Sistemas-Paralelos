@@ -10,5 +10,8 @@ def carregar():
         return json.load(json_tarefa)
 
 def salvar(capital_intelectual):
+    dados = carregar()
+    dados.append(capital_intelectual)
+
     with open("tarefas.json", "w") as json_tarefa:
-        json.dump(capital_intelectual, json_tarefa)
+        json.dump(dados, json_tarefa)

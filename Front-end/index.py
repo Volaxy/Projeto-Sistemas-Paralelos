@@ -166,7 +166,6 @@ class Toplevel1:
         }
 
         requests.post(enderecoApi, json=capital_intelectual)
-        self.btnListar_Click()
 
     def btnListar_Click(self):
         response = requests.get(enderecoApi)

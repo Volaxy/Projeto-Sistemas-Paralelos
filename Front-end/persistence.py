@@ -10,7 +10,5 @@ def carregar():
         return json.load(json_tarefa)
 
 def salvar(capital_intelectual):
-    capitais_intelectuais = carregar()
-
-    file = open("tarefas.json", mode="w")
-    file.write(jsonify(capital_intelectual))
+    with open("tarefas.json", "w") as json_tarefa:
+        json.dump(capital_intelectual, json_tarefa)

@@ -8,17 +8,19 @@ app = Flask("Multivix")
 CORS(app)
 
 
-@app.route("/api/tasks", methods=["GET"])
+@app.route("/api/capitalIntelectual", methods=["GET"])
 def get():
     tarefas = carregar()
     return jsonify(tarefas)
 
-@app.route("/api/tasks", methods=["POST"])
+@app.route("/api/capitalIntelectual", methods=["POST"])
 def post():
     tarefa = request.get_json()
+    print(tarefa)
+    salvar(tarefa)
 
     resultado = { "message": 'Registro salvo com sucesso'}
-    return jsonify(resultado)
+    return jsonify({"result": resultado})
 
 
 app.run(debug=True)

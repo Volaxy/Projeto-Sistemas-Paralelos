@@ -1,1 +1,9 @@
-{"registro": "1", "tema": "2", "descricao": "34", "autor": "4"}
+[
+  [
+    [
+      {"registro": "1", "tema": "2", "descricao": "34", "autor": "4"}, {"registro": "1", "tema": "2", "descricao": "34", "autor": "4"}
+    ],
+    {"registro": "1", "tema": "2", "descricao": "3", "autor": "4"}
+  ],
+  {"registro": "1", "tema": "2", "descricao": "3", "autor": "4"}
+]

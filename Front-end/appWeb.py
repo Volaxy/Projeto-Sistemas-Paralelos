@@ -16,7 +16,6 @@ def get():
 @app.route("/api/capitalIntelectual", methods=["POST"])
 def post():
     tarefa = request.get_json()
-    print(tarefa)
     salvar(tarefa)
 
     resultado = { "message": 'Registro salvo com sucesso'}
